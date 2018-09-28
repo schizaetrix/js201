@@ -11,3 +11,12 @@
 //
 // Example:
 // leetspeak('Leet') --> "l337"
+
+function leetspeak (string) {
+    var startstring = string.toUpperCase();
+    var leetstring = "";
+
+    if (startstring.search("A") != -1) {
+        startstring.replace("A","4")
+    } else {}
+}

@@ -8,7 +8,15 @@
 // *****
 // *****
 
+function makeSquare (size) {
 
+    var asterisks = "*";
+    var asterisksMult = asterisks.repeat(size) + '\n';
+    var asterisksSquared = asterisksMult.repeat(size);
+
+    return asterisksSquared.substring(0, asterisksSquared.length - 1);
+
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "makeBox" which is given a width and height and returns a
@@ -20,7 +28,9 @@
 // *    *
 // ******
 
+function makeBox (width, height) {
 
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "makeBanner" which is given some text and returns a banner
@@ -31,3 +41,7 @@
 // ****************************
 // * Welcome to DigitalCrafts *
 // ****************************
+
+function makeBanner () {
+
+}

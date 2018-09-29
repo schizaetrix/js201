@@ -30,6 +30,34 @@ function makeSquare (size) {
 
 function makeBox (width, height) {
 
+    var asterisks = "*";
+    var finalBox = "";
+    var lineTop = asterisks.repeat(width) + '\n';
+    var lineMiddle = "";
+    var lineBottom = asterisks.repeat(width);
+
+    function noAsterisks () {
+        if (height >= 3  && width >= 3) {
+          lineMiddle = lineMiddle + "*" + ( " ".repeat(width - 2) ) + "*" + '\n';
+        }
+    }
+
+    function ifHeiWid () {
+        if (height === 1) {
+          finalBox = finalBox + lineBottom;
+        } else if (height === 2) {
+          finalBox = finalBox + lineTop + lineBottom;
+        } else if (width === 1 || width === 2) {
+          finalBox = finalBox + ( lineTop.repeat(height - 1) ) + lineBottom;
+        } else {
+          finalBox = finalBox + lineTop + ( lineMiddle.repeat(height - 2) ) + lineBottom;
+        }
+    }
+
+    noAsterisks();
+    ifHeiWid();
+    return finalBox;
+
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,5 +1,9 @@
 # JavaScript 201 - Programming Exercises
 
+## Travis CI
+
+[![Build Status](https://travis-ci.org/schizaetrix/js201.svg?branch=master)](https://travis-ci.org/schizaetrix/js201)
+
 Programming exercises for a beginning JavaScript programmer.
 
 These exercises use Strings, loops, Objects, and Arrays to solve logic problems.

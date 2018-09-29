@@ -3,7 +3,9 @@
 // Example:
 // sumNumbers([1, 4, 8]) --> 13
 
-
+function sumNumbers (array) {
+    array = []
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "positiveNumbers" which is given an array of numbers and
